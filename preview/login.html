@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" theme="halloween-theme"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Halloween — Login preview</title><link rel="stylesheet" href="assets/styles/halloween-theme.css">
+<style>
+/* Match the standalone login layout, while retaining upstream sign-in components. */
+body{display:block;overflow:auto}.layout-wrapper{display:flex;flex-direction:column;min-height:100vh}.layout-wrapper main{min-inline-size:0;flex:1}.layout-wrapper footer{min-width:0;text-align:center;padding:18px}.signin-container{margin-top:35px}.server-name{text-align:center;margin-top:30px;font-size:14px;color:#bdb1c6}.preview-caption{text-align:center;margin:18px;color:#bdb1c6}
+@media(max-width:440px){.signin-container{box-sizing:border-box;width:calc(100% - 24px);padding:24px}.server-name{margin-top:16px}}
+</style></head><body><div class="layout-wrapper"><main>
+<div class="server-name">Halloween observatory</div>
+<div class="signin-container"><div class="signin-logo"><div class="zabbix-logo" role="img" aria-label="Zabbix"></div></div>
+<form aria-label="Sign in preview" id="login"><ul><li><label for="name">Username</label><input id="name" type="text" placeholder="Admin" autocomplete="off"></li><li><label for="password">Password</label><input id="password" type="password" placeholder="Preview only" autocomplete="off"></li><li><input class="checkbox-radio" id="autologin" type="checkbox"><label for="autologin"><span></span>Remember me for 30 days</label></li><li><button type="submit">Sign in</button></li><li class="sign-in-txt">or <a href="index.html">view the dashboard preview</a></li></ul></form>
+</div><div class="signin-links"><a href="index.html">Dashboard</a> &nbsp; · &nbsp; <a href="index.html#problems">Problems</a></div><p class="preview-caption">Halloween theme preview · No credentials are sent or saved</p>
+</main><footer>Halloween 1.0 · Zabbix 8.0 development</footer></div>
+<script>document.getElementById('login').onsubmit=e=>{e.preventDefault();location.href='index.html'};</script></body></html>

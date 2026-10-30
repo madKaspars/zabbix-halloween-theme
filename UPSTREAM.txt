@@ -1,0 +1,3 @@
+Repository: https://github.com/zabbix/zabbix
+Commit: 00c492823ad396e2de596f2fd07a9ffdfbf78e41
+Retrieved: 2026-10-28

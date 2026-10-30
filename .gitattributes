@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.woff2 binary
+source/zabbix-icons/** -text
+source/zabbix-sass/** -text

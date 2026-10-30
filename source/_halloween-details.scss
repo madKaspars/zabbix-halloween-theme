@@ -1,0 +1,96 @@
+// Static decorations stay outside data plots and operational status indicators.
+:root {
+  color-scheme: dark;
+  --button-border-radius: 8px;
+  --input-border-radius: 6px;
+  --surface-border-radius: 12px;
+  --overlay-border-radius: 14px;
+  --badge-border-radius: 4px;
+  --halloween-scene: url('halloween/night.svg?v=1');
+  --halloween-witch: url('halloween/witch.svg?v=1');
+  --halloween-pumpkin: url('halloween/pumpkin.svg?v=1');
+}
+body {
+  background-image: var(--halloween-scene), radial-gradient(ellipse at top right, #322137 0, transparent 65%);
+  background-position: right bottom, center;
+  background-size: 720px auto, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  background-image: linear-gradient(95deg, #211923, #362231);
+  border-bottom-color: #73472d;
+  box-shadow: 0 3px 16px rgba(#000000, .4);
+}
+header h1 { color: #ffce98; }
+.sidebar {
+  background-image: linear-gradient(180deg, #211527, #120f18);
+  border-right: 1px solid #493040;
+  box-shadow: 3px 0 18px rgba(#000000, .3);
+}
+.sidebar .server-name { color: #c6acbe; }
+.menu-main > li > a { font-weight: 600; }
+.menu-main > li.is-selected > a::before { color: #171018; }
+.menu-main .submenu::before,
+.menu-main .submenu::after { box-shadow: none; }
+@media (min-height: 950px) {
+  .sidebar:not(.is-compact):not(.is-hidden) .nav-user::before {
+    content: '';
+    display: block;
+    width: 178px;
+    height: 160px;
+    margin: 10px auto 3px;
+    background: var(--halloween-witch) center / contain no-repeat;
+    pointer-events: none;
+  }
+}
+.dashboard-grid-widget-header {
+  background-image: linear-gradient(100deg, #3c251f, #2e2034);
+  border-color: #705035;
+}
+.dashboard-grid-widget-header h4 { color: #ffd2a0; }
+.dashboard-grid-widget-header h4::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 19px;
+  margin-right: 6px;
+  vertical-align: -4px;
+  background: var(--halloween-pumpkin) center / contain no-repeat;
+  pointer-events: none;
+}
+.dashboard-grid-widget-contents { box-shadow: 0 4px 14px rgba(#000000, .2); }
+.overlay-dialogue { box-shadow: 0 20px 70px rgba(#000000, .6); }
+.signin-container {
+  margin-top: 3%;
+  padding-top: 18px;
+  border: 1px solid #9a5b32;
+  background-image: radial-gradient(ellipse at top, #493047 0, #241d2b 65%);
+  box-shadow: 0 20px 70px rgba(#000000, .6), 0 0 45px rgba(#ff983e, .10);
+}
+.signin-container::before {
+  content: '';
+  display: block;
+  width: 242px;
+  height: 218px;
+  margin: 0 auto 14px;
+  background: var(--halloween-witch) center / contain no-repeat;
+  pointer-events: none;
+}
+.signin-container button { box-shadow: 0 3px 18px rgba(#ff983e, .20); }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ffc285;
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  a, button, input, .sidebar, .menu-main a, .menu-main .submenu { transition-duration: 0s; }
+}
+@media print {
+  body, header, .sidebar, .signin-container { background-image: none; }
+  .signin-container::before, .sidebar .nav-user::before,
+  .dashboard-grid-widget-header h4::before { display: none; }
+}

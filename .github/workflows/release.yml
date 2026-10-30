@@ -1,0 +1,31 @@
+name: Attach release package
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          persist-credentials: false
+      - name: Build the source package and checksum
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          version=$(python3 -c 'import runpy; print(runpy.run_path("scripts/package_release.py")["VERSION"])')
+          test "$RELEASE_TAG" = "v$version"
+          python3 scripts/package_release.py
+      - name: Attach files to the published release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$RELEASE_TAG" "dist/zabbix-halloween-theme-$RELEASE_TAG.zip" dist/SHA256SUMS --repo "$GITHUB_REPOSITORY"

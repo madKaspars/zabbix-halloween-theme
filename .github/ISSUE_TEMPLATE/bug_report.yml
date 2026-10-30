@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a theme or installer problem using non-sensitive examples.
+body:
+  - type: markdown
+    attributes:
+      value: "Remove credentials, monitoring data, internal hostnames, and private screenshots. For vulnerabilities, see SECURITY.md."
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Exact Zabbix frontend, theme package, Python, and PHP CLI versions.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction
+      description: Steps and sanitized output. Indicate whether this is a fresh install, repair, update, or uninstall.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

@@ -1,0 +1,42 @@
+Halloween theme validation — 30 October 2026
+
+PASS: Compiled and parsed full theme; retained all 4041 upstream selectors.
+PASS: 73 semantic color/status selector declarations unchanged from upstream build.
+PASS: Standalone CSS; all custom image references resolve; no external assets added.
+PASS: Panel text contrast 14.02:1 (normal-state theme pair).
+PASS: Links contrast 9.40:1 (normal-state theme pair).
+PASS: Secondary text contrast 8.25:1 (normal-state theme pair).
+PASS: Primary button contrast 8.73:1 (normal-state theme pair).
+PASS: Sidebar navigation contrast 13.33:1 (normal-state theme pair).
+PASS: Sidebar selected contrast 8.73:1 (normal-state theme pair).
+PASS: Installer check is read-only; fresh install and uninstall restore APP.php byte-for-byte.
+PASS: One theme-list method and one dark-scheme override; other themes delegate to the parent scheme.
+PASS: Installation and uninstall refresh PHP modification time and preserve permissions.
+PASS: Asset upgrade backs up the earlier build and preserves APP.php; repeat upgrade is a no-op.
+PASS: Duplicate installs and upgrade/uninstall after user edits are rejected without overwriting edits.
+PASS: Installation alongside a sample custom-theme registration retains both entries and all existing assets; uninstall restores the exact baseline APP.php.
+PASS: Unrecognized custom APP.php methods, unsupported versions and existing assets are preserved and rejected.
+LIMIT: No local PHP CLI; PHP lint was not executed. Installer invokes it when available on the target.
+LIMIT: No live Zabbix frontend/server integration test or deployment was performed.
+
+Installer recovery/removal suite — 30 October 2026: 12 tests passed.
+PASS: Read-only install/repair/uninstall checks preserve frontend and backup contents.
+PASS: Repair preserves the upgraded frontend and updates the uninstall baseline.
+PASS: Repeat repair is a no-op; sample custom-theme registration and assets survive repair and removal.
+PASS: Missing-assets-only repair preserves the original uninstall baseline.
+PASS: Edited files, unfamiliar registrations, unsupported versions, corrupt backups and symlink targets are refused.
+PASS: Uninstall preserves unrelated files and handles frontend upgrades and missing theme assets.
+PASS: Simulated repair and uninstall failures restore the pre-action files and record.
+LIMIT: Recovery after power loss, concurrent deployment or persistent filesystem failure is not guaranteed.
+
+Preview validation — 28 October 2026; CSS and artwork unchanged:
+PASS: Chromium rendered dashboard, problems, modal and login with no script errors or failed asset requests.
+PASS: Theme comparison, filtering, sample acknowledgment, modal dismissal, compact sidebar and sample login navigation.
+PASS: Login fits a 390px viewport; all three SVGs are well-formed XML.
+
+Source verification — 30 October 2026:
+Verified 114 bundled Sass files, 146 icon-source files, and the preview icon font against the pinned official Git blob hashes.
+Rebuilt CSS and SVG copies matched the distributed theme assets byte for byte.
+
+Automated checks do not establish production suitability or constitute an independent security audit.
+GitHub Actions execution is separate from the local results above.

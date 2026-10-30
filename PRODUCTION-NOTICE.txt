@@ -1,0 +1,43 @@
+HALLOWEEN THEME — PRODUCTION NOTICE
+
+NOT FOR PRODUCTION — ISOLATED LABS AND DEMONSTRATIONS ONLY.
+Do not deploy on production, business-critical or safety-critical systems.
+
+AI-GENERATED PROJECT CUSTOMIZATIONS: the theme customizations, installer and
+project documentation were generated with AI assistance in OpenAI Codex using
+GPT-6 Astra (gpt-6-astra). Bundled Zabbix code and third-party fonts retain their
+original authorship and licenses. This attribution is not an endorsement.
+AI output may contain defects, security weaknesses and inaccurate instructions.
+Passing automated checks does not establish production suitability or amount
+to an independent security audit. Review the source before lab experimentation.
+
+This is a third-party frontend customization built from Zabbix 8.0.0rc3
+development sources. It has local preview and installer-fixture validation,
+but has not been validated on a live production installation.
+
+Installation/repair modifies the shared include/classes/core/APP.php and adds
+one CSS file and three SVG images. A PHP error can disrupt the web interface
+and JSON-RPC API. CSS changes can affect layout and monitoring-data readability.
+Frontend upgrades may remove the registration or require a theme rebuild.
+
+No database, monitoring server, agent, proxy or running-service changes are
+made. No JavaScript or remote asset requests are added to Zabbix.
+
+Test only in an isolated, disposable lab with the exact frontend build. Keep the
+installer backups, ensure PHP CLI syntax checking is available, verify critical
+screens, and test uninstall while shell/deployment rollback access is available.
+
+Before uninstall, switch affected profiles and the frontend default to another
+installed theme. The installer cannot check or change those saved selections.
+
+The examples use the official Zabbix 8.0 package frontend directory on RHEL:
+/usr/share/zabbix/ui. For a custom installation, use its actual frontend path.
+
+Preview removal:
+  python3 install.py /usr/share/zabbix/ui --uninstall --check
+
+Remove the theme:
+  python3 install.py /usr/share/zabbix/ui --uninstall
+
+Reuse your original --backup-dir if customized. Unknown local changes stop
+automatic removal. Backups are retained; see README.md for repair and recovery.

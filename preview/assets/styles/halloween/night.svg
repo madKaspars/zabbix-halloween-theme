@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" fill="none">
+  <title>Halloween moon, bats, haunted house and pumpkins</title>
+  <defs><radialGradient id="glow"><stop stop-color="#e18a43" stop-opacity=".13"/><stop offset="1" stop-color="#e18a43" stop-opacity="0"/></radialGradient><linearGradient id="moon" x2="1" y2="1"><stop stop-color="#e4ad69"/><stop offset="1" stop-color="#a96236"/></linearGradient></defs>
+  <ellipse cx="531" cy="142" rx="177" ry="142" fill="url(#glow)"/>
+  <circle cx="529" cy="116" r="65" fill="url(#moon)" opacity=".52"/>
+  <circle cx="506" cy="92" r="14" fill="#573b3c" opacity=".23"/><circle cx="552" cy="141" r="19" fill="#573b3c" opacity=".23"/>
+  <path d="M376 99q16-16 34 3l-3-15 10 7 10-7-3 15q18-18 34-3-24-2-41 20-17-22-41-20Zm160-52q10-10 22 2l-2-10 6 4 7-4-2 10q12-12 22-2-15-1-27 13-11-14-26-13Zm62 100q10-10 22 2l-2-10 6 4 7-4-2 10q12-12 22-2-15-1-27 13-11-14-26-13Z" fill="#191320"/>
+  <path d="M0 300v-10c80-44 165-23 229-39 79-19 127 10 182-11 55-20 104-9 153-16 59-9 104-22 156-18v94Z" fill="#15111d"/>
+  <path d="m470 255 2-104-16 3 30-38 14 10 1-49 25-27 21 32-8 56 21-22 34 36-15-4 10 107Z" fill="#17121e" stroke="#281c2e" stroke-width="2"/>
+  <path d="m511 94 14-3-1 25-14 2Zm-28 69 12-2-1 19-12 2Zm61-2 13 3 1 18-14-3Zm-32 38q14-17 24 0l-2 46h-24Z" fill="#ae6939" opacity=".65"/>
+  <path d="m506 104 23-3m-11-10-1 27m20 55 23 4m-11-15 1 20m-73-9 23-3m-12-8-1 20" stroke="#17121e" stroke-width="3"/>
+  <path d="m649 277-6-77-16-28-30-12 30 4-9-26 14 19 12 21 4-62-13-22-23-7 22 1-8-25 18 24 14 23 5 64 19-34 18-10 15-24-7 27-19 18-22 49 5 75Z" fill="#1e1627"/>
+  <path d="m699 269-1-54-21-21 23 12 9-41 1 42 10-10v15l-10 13 4 44Z" fill="#25192c"/>
+  <g opacity=".7"><path d="m404 257 2-9 7-2 2 5-5 2v6" fill="#6e5c42"/><ellipse cx="409" cy="273" rx="31" ry="21" fill="#8b4b2e"/><ellipse cx="409" cy="273" rx="17" ry="21" fill="#a95e31"/><path d="m388 270 9-8 4 10m17 0 4-10 9 8m-35 9 8 3 5-3 5 3 9-3q-14 17-27 0Z" fill="#f2b367"/></g>
+  <g opacity=".55"><path d="m343 272 1-7 6-1 1 4-4 1v5" fill="#6e5c42"/><ellipse cx="346" cy="284" rx="22" ry="14" fill="#8b4b2e"/><ellipse cx="346" cy="284" rx="12" ry="14" fill="#a95e31"/><path d="m331 282 6-5 3 6m12 0 3-6 6 5m-25 6 7 2 3-2 4 2 6-2q-11 10-20 0Z" fill="#f2b367"/></g>
+  <path d="m292 255 3 10 10 3-10 3-3 10-3-10-10-3 10-3m129-105 2 6 6 2-6 2-2 6-2-6-6-2 6-2" fill="#956c61" opacity=".5"/>
+</svg>

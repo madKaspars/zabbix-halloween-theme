@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 56" fill="none">
+  <title>Halloween jack-o'-lantern</title>
+  <path d="M30 13c-2-8 2-11 7-11l2 4c-5 0-6 4-5 8" fill="#928253" stroke="#241725" stroke-width="2"/>
+  <path d="M34 12c12-6 26 2 27 19 2 18-12 23-28 22C15 56 1 46 3 30 5 15 15 8 29 13" fill="#ff983e" stroke="#241725" stroke-width="3"/>
+  <ellipse cx="22" cy="33" rx="12" ry="20" fill="#ed772a"/>
+  <ellipse cx="43" cy="33" rx="13" ry="20" fill="#ed772a"/>
+  <ellipse cx="32" cy="33" rx="13" ry="21" fill="#ffad4c"/>
+  <path d="m13 31 9-11 6 12Zm24 1 6-12 9 11ZM29 35l3-6 4 6ZM14 38l9 3 3-3 6 5 6-5 4 3 9-4c-3 12-28 16-37 1Z" fill="#2e1b2a"/>
+  <path d="m19 29 4-5 2 5m15 0 3-5 4 5" stroke="#ffd982" stroke-width="2"/>
+</svg>
